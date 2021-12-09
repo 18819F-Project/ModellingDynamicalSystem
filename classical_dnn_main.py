@@ -1,24 +1,31 @@
-"""
-Double pendulum motion simulation
+'''
+@file   classical_dnn_main.py
+@brief  The Main Training and Testing Platform File for the Classcial DeLaN
+@author Kelsey J. Harvey
+@date   November 27. 2021
+'''
 
-"""
 from __future__ import print_function
 
+# Import NumPy for Numerical Computation
+import numpy as np
+
+# Import PyTorch for Classcial DNN/DeLaN Implementation
+import torch
+import torch.utils.data
+
+# Import Canonical Python Modules for Operating System Interfacing
 import os
 import sys
 sys.path.append("./model")
 sys.path.append("./dynamics")
 
+# Import Custom DNN/DeLaN Modules
 from visualize import *
 from ode_solver import *
 from network import *
 from dataloader import *
 from lagrangian import *
-
-
-import numpy as np
-import torch
-import torch.utils.data
 
 if __name__ == "__main__":
     print("--- Starting Main Training Loop! ---")
