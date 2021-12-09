@@ -1,3 +1,3 @@
-# Modeling Dynamical Systems with Deep Neural Networks By Leveraging Quantum Compute
+# Pendulum Data Branch
 
-A repo dedicated to a project related to Quantum Computing Deep Learning methods for dynamic system modeling for Carnegie Mellon University's 18-819F (Introduction of Quantum Computing) Fall 2021 course. The Repo is broken down into branches corresponding to the Classical, Hybrid, and Quantum Implementations of a Deep Lagrangian Network; a Fully-Connected Deep Neural Network (FCN) designed to learn the Lagrangian Mechanics of some Dynamical System by learning its necessary Euler-Lagrangian Parameters. The Dynamical System of interest concerned in this research project is the ever-popular, textbook, Double Pendulum.  
+This Branch of the Repo contains those files which pertain the data used for the developing each of the DNNs. The data are procedurally generated via random uniform smapling in generate_data.py. NOTE: Neither the training nor testing data '.npz' files are included here due to size constraints, but may be easily recreated on a local system by simply cloning this repo and executing 'generate_data.py' on one's own terminal.  
